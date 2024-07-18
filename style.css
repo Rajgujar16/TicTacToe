@@ -240,4 +240,8 @@ body.dark #navbar h1 {
     #para{
         display: none;
     }
+
+    .container{
+        height: 40vh;
+    }
 }
