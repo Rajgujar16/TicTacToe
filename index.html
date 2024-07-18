@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/310/928/original/tic-tac-toe-board-game-3d-illustration-png.png"
+            alt="nav-logo">
+            <p id="para"><span style="color:red;">Tic</span><span style="color:green;">Tac</span><span style="color:rgb(156, 144, 55);">Toe</span></p>
+        </div>
+        <h1><span style="color: red;">Tic</span><span style="color: green;">Tac</span><span style="color:rgb(156, 144, 55);">Toe</span></h1>
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle" class="toggle-input">
+            <label for="theme-toggle" class="toggle-label">
+                <div class="toggle-icons">
+                    <i class="bi bi-cloud-sun-fill sun-icon"></i>
+                    <i class="bi bi-moon-stars-fill moon-icon"></i>
+                </div>
+                <div class="toggle"></div>
+            </label>
+        </div>
+    </nav>
+    
+    <div class="wrapper">
+        <div class="msg-container hide">
+            <p id="msg"></p>
+            <button id="new-btn">New Game</button>
+        </div>
+        
+        <div class="popper">
+            <div id="winner1" class="hidden">
+                <img src="./assests/congrats.gif" alt="Winner GIF" width="100px">
+            </div>
+            <div id="winner2" class="hidden" style="transform: rotate(-90deg);">
+                <img src="./assests/congrats.gif" alt="Winner GIF" width="100px">
+            </div>
+        </div>
+    </div>
+
+    <main-container>
+        <div class="container">
+            <div class="game-container">
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+                <button class="box themebox"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main-container>
+
+    <audio id="click-sound" src="./assests/box-[AudioTrimmer.com].wav"></audio>
+    <audio id="game-over-sound" src="./assests/game-over-160612.mp3"></audio>
+    <audio id="theme-Sound" src="./assests/themesound.wav"></audio>
+    <audio id="draw-Sound" src="./assests/draw Sound.wav"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
